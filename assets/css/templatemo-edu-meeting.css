@@ -814,7 +814,7 @@ banner
 
 .main-banner .caption {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
 }
 
@@ -873,7 +873,7 @@ services
 */
 
 .services {
-  margin-top: -135px;
+  margin-top: -335px;
   position: absolute;
   width: 100%;
 }
