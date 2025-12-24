@@ -1,34 +1,93 @@
-/*
-
-TemplateMo 569 Edu Meeting
-
-https://templatemo.com/tm-569-edu-meeting
-
-*/
-
 /* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-10. preloader
-11. search
-12. portfolio
-
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
+fonts
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Black.eot');
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../fonts/IRANSans/woff2/IRANSansWeb_Black.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSans/woff/IRANSansWeb_Black.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSans/ttf/IRANSansWeb_Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Bold.eot');
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../fonts/IRANSans/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSans/woff/IRANSansWeb_Bold.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSans/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Medium.eot');
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../fonts/IRANSans/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSans/woff/IRANSansWeb_Medium.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSans/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Light.eot');
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../fonts/IRANSans/woff2/IRANSansWeb_Light.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSans/woff/IRANSansWeb_Light.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSans/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_UltraLight.eot');
+  src: url('../fonts/IRANSans/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../fonts/IRANSans/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSans/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSans/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/IRANSans/eot/IRANSansWeb.eot');
+  src: url('../fonts/IRANSans/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../fonts/IRANSans/woff2/IRANSansWeb.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSans/woff/IRANSansWeb.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSans/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
 /* 
 ---------------------------------------------
 reset
@@ -143,7 +202,7 @@ hgroup {
 
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: IranSans, 'Poppins', sans-serif;
   font-weight: 400;
   background-color: black;
   font-size: 16px;
@@ -194,7 +253,7 @@ global styles
 html,
 body {
   background: black;
-  font-family: 'Poppins', sans-serif;
+  font-family: IranSans, 'Poppins', sans-serif;
 }
 
 ::selection {
@@ -344,7 +403,11 @@ header
 }
 
 .header-area {
-  background-color: rgba(250, 250, 250, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+  --tw-backdrop-blur: blur(1px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
   position: absolute;
   top: 0;
   left: 0;
@@ -733,7 +796,7 @@ banner
 
 .main-banner .caption {
   position: absolute;
-  top: 35%;
+  top: 45%;
   transform: translateY(-50%);
 }
 
@@ -1350,6 +1413,7 @@ section.contact-us #contact {
   background-color: #ffffff25;
   border-radius: 20px;
   padding: 40px;
+  direction: rtl;
 }
 
 section.contact-us #contact h2 {
@@ -1415,10 +1479,10 @@ section.contact-us .right-info {
   background-color: #a12c2f;
   border-radius: 20px;
   padding: 40px;
+  direction: rtl;
 }
 
 section.contact-us .right-info ul li {
-  display: inline-block;
   border-bottom: 1px solid rgba(250, 250, 250, 0.15);
   margin-bottom: 30px;
   padding-bottom: 30px;
@@ -1791,7 +1855,7 @@ responsive
 @media (max-width: 992px) {
 
   .main-banner .caption {
-    top: 60%;
+    top: 50%;
   }
 
   .main-banner .caption h2 {
