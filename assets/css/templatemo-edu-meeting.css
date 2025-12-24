@@ -145,7 +145,7 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: black;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -193,7 +193,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: black;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -317,7 +317,7 @@ header
 }
 
 .background-header {
-  background-color: #fff !important;
+  background-color: #000000d4 !important;
   height: 80px !important;
   position: fixed !important;
   top: 0 !important;
@@ -326,14 +326,14 @@ header
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
-.background-header .main-nav .nav li a {
+/* .background-header .main-nav .nav li a {
   color: #1e1e1e !important;
-}
+} */
 
-.background-header .logo,
+/* .background-header .logo,
 .background-header .main-nav .nav li a {
   color: #1e1e1e !important;
-}
+} */
 
 .background-header .main-nav .nav li:hover a {
   color: #fb5849 !important;
@@ -665,7 +665,6 @@ header
   }
 
   .header-area {
-    background-color: #f7f7f7;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -687,85 +686,6 @@ header
   .header-area .main-nav {
     overflow: hidden;
   }
-
-  .header-area .main-nav .nav {
-    float: none;
-    width: 100%;
-    display: none;
-    -webkit-transition: all 0s ease 0s;
-    -moz-transition: all 0s ease 0s;
-    -o-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    margin-left: 0px;
-  }
-
-  .header-area .main-nav .nav li:first-child {
-    border-top: 1px solid #eee;
-  }
-
-  .header-area.header-sticky .nav {
-    margin-top: 100px !important;
-  }
-
-  .header-area .main-nav .nav li {
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-
-  .header-area .main-nav .nav li a {
-    height: 50px !important;
-    line-height: 50px !important;
-    padding: 0px !important;
-    border: none !important;
-    background: #f7f7f7 !important;
-    color: #191a20 !important;
-  }
-
-  .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
-    color: #f5a425 !important;
-  }
-
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
-    position: relative;
-    visibility: inherit;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    top: 0px;
-    width: 100%;
-    box-shadow: none;
-    height: 0px;
-    transition: all 0s;
-  }
-
-  .header-area .main-nav .nav li.submenu ul li a {
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  .header-area .main-nav .nav li.submenu ul li a:hover:before {
-    width: 0px;
-  }
-
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
-    height: auto;
-  }
-
-  .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
-    right: 30px;
-    font-size: 14px;
-    top: 15px;
-  }
-
-  .header-area .main-nav .nav li.submenu:hover ul,
-  .header-area .main-nav .nav li.submenu:focus ul {
-    height: 0px;
-  }
 }
 
 @media (min-width: 767px) {
@@ -785,7 +705,6 @@ banner
   position: relative;
   max-height: 100%;
   overflow: hidden;
-  margin-bottom: -7px;
   direction: rtl;
 }
 
@@ -873,9 +792,8 @@ services
 */
 
 .services {
-  margin-top: -335px;
-  position: absolute;
   width: 100%;
+  padding-top: 25px;
 }
 
 .services .item {
@@ -988,11 +906,6 @@ upcoming meetings
 */
 
 section.upcoming-meetings {
-  background-image: url(../images/meetings-bg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 230px;
   padding-bottom: 110px;
 }
@@ -1216,11 +1129,6 @@ courses
 */
 
 section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 140px;
   padding-bottom: 130px;
 }
@@ -1435,23 +1343,18 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/meetings-bg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 140px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
 }
 
 section.contact-us #contact {
-  background-color: #fff;
+  background-color: #ffffff25;
   border-radius: 20px;
   padding: 40px;
 }
 
 section.contact-us #contact h2 {
   text-transform: uppercase;
-  color: #1f272b;
+  color: #fff;
   border-bottom: 1px solid #eee;
   margin-bottom: 40px;
   padding-bottom: 20px;
@@ -1899,10 +1802,6 @@ responsive
 
   .main-banner .caption .main-button-red {
     margin-top: 15px;
-  }
-
-  .services {
-    margin-top: 60px;
   }
 
   section.upcoming-meetings {
