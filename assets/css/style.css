@@ -1925,6 +1925,11 @@ responsive
     color: #1f272b;
   }
 
+  .meeting-single-item .thumb .date {
+    top: 15px;
+    right: 15px;
+  }
+
   .meeting-single-item .thumb .date span {
     font-size: 18px;
   }
