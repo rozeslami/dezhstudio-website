@@ -419,6 +419,10 @@ header
   transition: all .5s ease 0s;
 }
 
+.header-area.header-sub-page {
+  background-color: black;
+}
+
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
@@ -860,7 +864,7 @@ services
 }
 
 .services .item {
-  background-image: url(../images/service-item-bg.jpg);
+  background-image: url(../images/season-item-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -870,21 +874,23 @@ services
   padding: 40px;
 }
 
+
 .services .item .icon {
-  max-width: 60px;
+  max-width: 100px;
   margin: 0 auto;
 }
 
 .services .item h4 {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .services .item p {
   color: #fff;
   font-size: 13px;
+  padding-bottom: 15px;
 }
 
 .services .owl-nav {
@@ -1344,12 +1350,13 @@ section.our-facts {
 }
 
 section.our-facts h2 {
-  font-size: 38px;
+  font-size: 28px;
   color: #fff;
   line-height: 50px;
   font-weight: 700;
   letter-spacing: 0.5px;
   margin-bottom: 50px;
+  direction: rtl;
 }
 
 .count-area-content {
@@ -1569,12 +1576,7 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-image: url(../images/meetings-page-bg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 75px;
+  padding-top: 125px;
   padding-bottom: 0px;
   direction: rtl;
 }
