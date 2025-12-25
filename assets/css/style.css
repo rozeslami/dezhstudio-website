@@ -790,7 +790,11 @@ banner
 
 .video-overlay {
   position: absolute;
-  background-color: rgba(31, 39, 43, 0.75);
+  background-color: rgba(31, 39, 43, 0.5);
+  background: linear-gradient(to bottom,
+      rgba(31, 39, 43, 0.5) 0%,
+      black 85%,
+      black 100%);
   top: 0;
   left: 0;
   bottom: 0;
@@ -860,7 +864,8 @@ services
 
 .services {
   width: 100%;
-  padding-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 150px;
 }
 
 .services .item {
@@ -1346,7 +1351,7 @@ section.our-facts {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 340px 0px 125px 0px;
+  padding: 150px 0px 150px 0px;
 }
 
 section.our-facts h2 {
@@ -1682,7 +1687,6 @@ section.meetings-page .pagination ul li a:hover {
   position: absolute;
   background-color: rgba(250, 250, 250, 0.9);
   width: 80px;
-  height: 80px;
   text-align: center;
   padding: 15px 0px;
   border-radius: 10px;
@@ -1921,4 +1925,7 @@ responsive
     color: #1f272b;
   }
 
+  .meeting-single-item .thumb .date span {
+    font-size: 18px;
+  }
 }
